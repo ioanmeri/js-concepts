@@ -2,7 +2,7 @@
 
 From [Web Dev Simplified](https://www.youtube.com/watch?v=DHvZLI7Db8E&list=PLZlA0Gpn_vH-0FlQnruw2rd1HuiYJHHkm&index=1)
 
-A Promise in JS is like a promise in real life, where you commit to something, like I promise to do something, and that has two results. Promise is completed (resolved) or failed (rejected).
+A Promise in JS is like a promise in real life, where you commit to something like I promise to do something, and that has two results. The Promise is completed (resolved) or failed (rejected).
 
 ## Syntax
 
@@ -93,7 +93,7 @@ watchTutorialPromise().then((message) => {
 })
 ```
 
-With Promises the code is lot cleaner to write than with using callbacks. Because when you start nesting callbacks you get the callback hell (= code gets intended further and further)!
+With Promises the code is a lot cleaner to write than with using callbacks. Because when you start nesting callbacks you get the callback hell (= code gets intended further and further)!
 
 
 ## Promise All
@@ -129,7 +129,7 @@ Promise.all([
 
 ## Promise Race
 
-Is just like Promise.all except it will return as soon as the first one it is completed, instead of waiting for evertyhing to complete.
+It is just like Promise.all except it will return as soon as the first one is completed, instead of waiting for everything to complete.
 
 ```
 Promise.race([

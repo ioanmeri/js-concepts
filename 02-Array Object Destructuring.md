@@ -17,7 +17,7 @@ Extract the 3 first letters Based on **position**:
 const [a, b, c] = alphabet
 ```
 
-What if we want to skip 'B' ?
+What if we want to skip 'B'?
 ```
 const [a,, c] = alphabet
 ```
@@ -173,7 +173,7 @@ Everything in personTwo **will override** everything in personOne
 
 All of the **rest** of **personOne**, and all of the **rest** of **personTwo**
 
-Take everything inside personOne and put in object, and then take of personTwo and also put it
+Take everything inside personOne and put in the object, and then take everything of personTwo and also put it
 in the same object, but override anything that was already in personOne
 
 ```

@@ -2,11 +2,11 @@
 
 From [Web Dev Simplified](https://www.youtube.com/watch?v=cRHQNNcYf6s&list=PLZlA0Gpn_vH-0FlQnruw2rd1HuiYJHHkm&index=4)
 
-Keep your code clean and maintenable!
+Keep your code clean and maintainable!
 
 The main idea behind modules is allowing you to import and export different sections of code, from different files into other files. 
 
-Break apart your code into more smaller files, which are easier to understand and reason with later on.
+Break apart your code into smaller files, which are easier to understand and reason with later on.
 
 ## Example
 
@@ -34,9 +34,9 @@ function printAge(user){
 
 ## Types of exports
 
-We can only **default export** only **1 thing** (usually the class if there is one)
+We can **default export** only **1 thing** (usually the class if there is one)
 
-Export User class as default as named functions 
+Export User class as default and functions as standard 
 
 ### 1st way:
 
@@ -81,7 +81,7 @@ export function printAge(user){
 
 ## Import at main.js
 
-Make sure you put a **./** in front of the module to import it from relative path,  or **/** for absolute path.
+Make sure you put a **./** in front of the module to import it from a relative path,  or **/** for an absolute path.
 
 project/**main.js**
 ```
@@ -91,7 +91,7 @@ const user = new User('Bob', 11)
 console.log(user)
 ```
 
-This is not enought, will through a SyntaxError. We need to tell index.html that we are using modules
+This is not enough, will through a SyntaxError. We need to tell index.html that we are using modules
 
 project/**index.html**:
 
@@ -118,13 +118,13 @@ printAge(user)
 
 ## Browser Support
 
-Not many modern browsers support import though, so what most people do is that they use tools such as **babel** to convert their import and export statements & other modern JS feautures into older JS, so that they can be used in browsers that don't support es6.
+Not many modern browsers support import though, so what most people do is that they use tools such as **babel** to convert their import and export statements & other modern JS features into older JS, so that they can be used in browsers that don't support es6.
 
-Older browsers will completely ignore the script tag because they don't recognise the type="module" part. So it won't even render.
+Older browsers will completely ignore the script tag because they don't recognize the type="module" part. So it won't even render.
 
-You can use the nomodule attribute, which is recognised by older browsers and ignored by those who support es6.
+You can use the nomodule attribute, which is recognized by older browsers and ignored by those who support es6.
 ```
 <script nomodule  src="oldmain.js">
 ```
 
-But use babel anyway. It will automatically do the convertions for you and you don't have to rewrite your code twice.
+But use babel anyway. It will automatically do the conversions for you and you don't have to rewrite your code twice.

@@ -77,9 +77,9 @@ console.log(fib(40))
 ```
 
 ### Refactor to Efficient
-For fb(5) we need to calculate the fibonacci sequence of 4 and 3.
+For fib(5) we need to calculate the Fibonacci sequence of 4 and 3.
 
-For fb(4) we need fib seq of 3 and 2
+For fib(4) we need fib seq of 3 and 2
 
 that means we calculating fib(3) twice!
 
@@ -110,4 +110,4 @@ console.log(fib(100))
 * HybridHDR
   * Auto Color Saturation: some calculations into complex function remain the same at different inputs
 * Auto Check Username
-  * SignUp Form: if username tried and exists, no need to send a GET request again to check if username exists
+  * SignUp Form: if username tried and exists, no need to send a GET request again to check if the username exists

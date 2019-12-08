@@ -26,7 +26,7 @@ const filteredItems = items.filter((item) => {
 console.log(filteredItems) // (4) [{...}, {...}, {...}, {...}]
 ```
 
-The great thing about filter and all the other methods for arrays, is that they actually don't change the underline object that you are filtering.
+The great thing about filter and all the other methods for arrays is that **they actually don't change the underline object** that you are filtering.
 
 
 ## map
@@ -45,7 +45,7 @@ console.log(itemNames) // (7) ["Bike", "TV", ..., "Keyboard"]
 
 Allows you to **find a single object** in an array
 
-Return the item for **the first one where it's true ** (the statement in return )
+Return the item for **the first one where it's true** (the statement in return )
 
 ```
 const foundItem = items.find((item) => {
@@ -57,7 +57,7 @@ console.log(foundItem) // {name: "Album", price: 10}
 
 ## forEach
 
-Does not return anything! Similar to for loop
+It does not return anything! Similar to for loop
 
 ```
 items.forEach((item) => {
@@ -82,7 +82,7 @@ console.log(hasInexpensiveItems);
 
 ## every 
 
-Checks to make sure that **every single items** fulfills the statement
+Checks to make sure that **every single item** fulfills the statement
 
 ```
 const hasInexpensiveItems = items.every((item) => {
@@ -96,9 +96,9 @@ console.log(hasInexpensiveItems) // false
 
 Different from the others. It's doing some operation on the array and returning a combination of all those different operations.
 
-Get total price:
+Get the total price:
 
-Runs a function on every single item inside the array. The first method of that function, is going to be whatever the previous iteration of this array returned. The second item is the actual item in the array.
+Runs a function on every single item inside the array. The first method of that function is going to be whatever the previous iteration of this array returned. The second item is the actual item in the array.
 
 The first time this reducer runs:
   * return currentTotal = 100 + 0 (startingCurrentTotal)

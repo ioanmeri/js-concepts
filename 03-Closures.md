@@ -3,7 +3,7 @@
 From [Web Dev Simplified](https://www.youtube.com/watch?v=3a0I8ICR1Vg)
 
 In other languages, you cannot access variables outside of a function, inside of that function. 
-But it is possible in JS, this is what we call a closure.
+But it is possible in JS, this is what we call closure.
 
 A global variable is available inside this function:
 ```
@@ -16,11 +16,11 @@ function printName(){
 printName() // Kyle
 ```
 
-The entrire JS file is one scope. The function is another scope.
+The entire JS file is one scope. The function is another scope.
 
-> Every scope has access to everything outside of it's scope. 
+> Every scope has access to everything outside of its scope. 
 
-The function has access to everything inside outer file!
+The function has access to everything inside the outer file!
 ```
 const myName = 'Kyle'
 
@@ -52,12 +52,12 @@ How is the **innerFunction** able to **access** the **outerVariable**, **even af
 
 Because the outerVariable has gone out of scope. That is where closures come in.
 
-What happens is that **innerFunction keeps track of the outerVariable at all times**. Even if the function that defines this variable, is no longer executing anymore (when function exits).
+What happens is that **innerFunction keeps track of the outerVariable at all times**. Even if the function that defines this variable, is no longer executing anymore (when the function exits).
 
 ## Common Use Case
 
 When Using **Fetch**, we actually use a Closure. A function defined inside of another function.
-The inner function, has access to all of the scope of the outerFunction.
+The inner function has access to all of the scope of the outerFunction.
 
 ```
 function outerFunction(url){
